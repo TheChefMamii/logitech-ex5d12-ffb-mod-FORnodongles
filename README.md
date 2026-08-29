@@ -11,12 +11,10 @@ it into a USB-connected wheel with force feedback support.
   most direct-drive-style wheels with a separate mainboard)
   
 - Raspberry Pi Pico (RP2040), CircuitPython-compatible
-- 
+  
 - BTS7960 motor driver module
-- 
-- A power supply for the motor (this project uses a repurposed 19V
-
-  laptop adapter — check your motor's rated voltage/current first)
+  
+- A power supply for the motor (this project uses a repurposed 19V laptop adapter — check your motor's rated voltage/current first)
   
 - Jumper wires / spare wire for extending connectors
   
