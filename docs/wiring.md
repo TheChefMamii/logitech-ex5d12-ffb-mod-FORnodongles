@@ -11,8 +11,8 @@ This reflects the actual final wiring, verified with test scripts.
 | Button matrix (10 wires) | GP1–GP10 (see [button-mapping.md](button-mapping.md)) |
 | Shift paddles — Left (Blue) | GP27 (ADC1) |
 | Shift paddles — Right (Yellow) | GP28 (ADC2) |
-| Shift paddles — GND (Yellow+Blue tied) | Pico GND |
-| Shift paddles — VCC (Double Red) | Pico 3V3 (OUT) |
+| Shift paddles — GND (twisted Yellow+Blue pair, separate wire) | Pico GND |
+| Shift paddles — VCC (twisted Red+Red pair, separate wire) | Pico 3V3 (OUT) |
 | Steering potentiometer — signal | GP26 (ADC0) |
 | Steering potentiometer — VCC | Pico 3V3 (OUT) |
 | Steering potentiometer — GND | Pico GND |
