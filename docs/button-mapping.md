@@ -51,8 +51,11 @@ pair gets pulled low when a button is pressed.
 
 ## Notes / Open Questions
 
-- Brown (GP9) and Black (GP10) are still unused — most likely tied to
-  the shift paddles connector (J7), not the main button matrix.
+- Brown (GP9) and Black (GP10) are still unused and their purpose is
+  unknown — they are **not** related to the shift paddles. The J7
+  connector (shift paddles) turned out to be a completely separate
+  4-pin socket, wired independently to GP27/GP28
+  (see [`j7-connector.md`](j7-connector.md)).
 - No diodes were added externally; the matrix behaves correctly as-is,
   suggesting diodes already exist somewhere in the original wiring
   harness or button PCB.
