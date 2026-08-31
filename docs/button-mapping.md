@@ -1,9 +1,11 @@
 # Button Matrix Mapping
 
 The wheel's 16 buttons (14 face/shoulder buttons + 4-way D-Pad + PS
-button) are wired as a diode matrix across only 10 Pico pins, rather
-than a simple row/column grid. Each button bridges a unique pair of
-pins when pressed.
+button) are wired as a diode matrix. 10 wires were originally connected
+to the Pico while identifying the matrix, but only **8 of them
+(GP1–GP8)** actually participate — all 16 buttons were fully mapped
+using just those 8 pins. The remaining 2 wires (GP9, GP10) turned out
+to be unused.
 
 ## Wire Colors → Pico Pins
 
