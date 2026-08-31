@@ -17,6 +17,8 @@ GND connection comes from a separate twisted wire that only shares
 color names with the signal wires, it is not the same physical
 conductor.
 
+For the full circuit context, see wiring.md
+
 ## Measured Values
 
 | State | Blue (GP27) | Yellow (GP28) |
