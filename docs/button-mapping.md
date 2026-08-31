@@ -51,6 +51,8 @@ to belong to the shift paddles (see the J7 connector notes below).
 Found using a simple matrix-scan test script that prints which pin
 pair gets pulled low when a button is pressed.
 
+For the full circuit context, see wiring.md
+
 ## Notes / Open Questions
 
 - Brown (GP9) and Black (GP10) are still unused and their purpose is
