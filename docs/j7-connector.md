@@ -1,18 +1,21 @@
 # J7 Connector — Shift Paddles (SOLVED)
-
 ## Final Result
 
-The J7 socket carries the two shift paddles as **two independent
-analog (RC-filtered resistive) channels**, not a digital shift
-register and not a shared resistor ladder. Each paddle only affects
-its own wire; the other stays at its baseline.
+The J7 socket has **4 physically separate wires** — do not confuse the
+twisted GND/VCC pairs with the solid-color signal wires below, even
+though they share color names:
 
-| Wire | Pico Pin | Role |
+| Wire (physical) | Pico Pin | Role |
 |---|---|---|
-| Yellow + Blue (tied together) | Pico GND | Common ground |
-| Double Red | Pico 3V3 (OUT) | Shared supply |
-| Blue | GP27 (ADC1) | **Left paddle** signal |
-| Yellow | GP28 (ADC2) | **Right paddle** signal |
+| Twisted Yellow+Blue pair (separate wire, NOT the solid wires below) | Pico GND | Common ground |
+| Twisted Red+Red pair (separate wire) | Pico 3V3 (OUT) | Shared supply |
+| Solid Blue wire | GP27 (ADC1) | **Left paddle** signal |
+| Solid Yellow wire | GP28 (ADC2) | **Right paddle** signal |
+
+⚠️ **Do not tie the solid Yellow/Blue signal wires to GND** — the
+GND connection comes from a separate twisted wire that only shares
+color names with the signal wires, it is not the same physical
+conductor.
 
 ## Measured Values
 
