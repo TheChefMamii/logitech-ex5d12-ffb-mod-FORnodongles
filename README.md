@@ -5,25 +5,19 @@ steering wheel (original dongle lost) and replacing its electronics
 with a Raspberry Pi Pico (RP2040) and a BTS7960 motor driver, turning
 it into a USB-connected wheel with force feedback support.
 
+## What You'll Need
+
 **Hardware**
-<img width="3060" height="4080" alt="20260829_200107" src="https://github.com/user-attachments/assets/af4e6dc2-3523-4c37-905c-5cb93a9d1831" />
-- A Logitech E-X5D12 wheel (or similar — the general process applies to
-  most direct-drive-style wheels with a separate mainboard)
-  
+- A Logitech E-X5D12 wheel (or similar)
 - Raspberry Pi Pico (RP2040), CircuitPython-compatible
-  
 - BTS7960 motor driver module
-  
-- A power supply for the motor (this project uses a repurposed 19V laptop adapter — check your motor's rated voltage/current first)
-  
-- Jumper wires / spare wire for extending connectors
-  
-- A multimeter (essential — you'll be using it constantly to identify
-  unknown connectors)
+- A power supply for the motor (this project reuses a 19V laptop adapter)
+- wires
+- A multimeter (essential)
 
 **Tools**
-- Screwdriver set(flat ones)
-
+- Screwdriver set (flathead)
+- 
 ## Getting Started
 
 ## Step 1: Open the Wheel and Remove the Mainboard
@@ -61,8 +55,20 @@ buttons, etc.), check [`docs/parts-inventory.md`](docs/parts-inventory.md)
 ones are still unconfirmed.
 
 ## Step 3: Wire Everything to the New Controller
+<img width="901" height="691" alt="SCHEMA OF MODDED MAINBOARD" src="https://github.com/user-attachments/assets/aae998e4-e595-4a98-881c-ba001f900201" />
+Every connector was identified and wired using a hands-on approach —
+testing each socket directly with the Pico rather than guessing from
+datasheets alone:
 
-Once every socket is identified, follow the wiring diagram in
-[`docs/wiring.md`](docs/wiring.md) to connect each one to the Pico and
-the BTS7960 motor driver. This is also where you'll wire in the
-external power supply for the motor.
+- The button matrix (10 wires) was mapped by connecting all 10 wires
+  to GPIO pins and running a scan script that prints which pin pair
+  gets triggered per button press.
+- The mystery 4-pin connector for the shift paddles turned out to be
+  two independent RC-filtered analog channels rather than a digital
+  shift register.
+- The motor driver's direction pins were tested at reduced power
+  (25% duty) before running at full power.
+
+Full final pinout: [`docs/wiring.md`](docs/wiring.md)
+Button mapping details: [`docs/button-mapping.md`](docs/button-mapping.md)
+Shift paddle investigation: [`docs/j7-connector.md`](docs/j7-connector.md)
