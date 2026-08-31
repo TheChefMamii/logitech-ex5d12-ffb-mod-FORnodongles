@@ -1,3 +1,4 @@
+<img width="901" height="691" alt="SCHEMA OF MODDED MAINBOARD" src="https://github.com/user-attachments/assets/87cf3ee6-81a9-489d-847c-969986c3748e" />
 # Wiring (Confirmed)
 
 All connectors have been identified, tested, and wired to the Pico.
