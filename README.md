@@ -55,7 +55,9 @@ buttons, etc.), check [`docs/parts-inventory.md`](docs/parts-inventory.md)
 ones are still unconfirmed.
 
 ## Step 3: Wire Everything to the New Controller
-<img width="901" height="691" alt="SCHEMA OF MODDED MAINBOARD" src="https://github.com/user-attachments/assets/aae998e4-e595-4a98-881c-ba001f900201" />
+
+See the full circuit diagram in docs/wiring.md
+
 Every connector was identified and wired using a hands-on approach —
 testing each socket directly with the Pico rather than guessing from
 datasheets alone:
