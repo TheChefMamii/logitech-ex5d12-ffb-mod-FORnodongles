@@ -5,6 +5,11 @@ steering wheel (original dongle lost) and replacing its electronics
 with a Raspberry Pi Pico (RP2040) and a BTS7960 motor driver, turning
 it into a USB-connected wheel with force feedback support.
 
+> [!NOTE]
+> **Work in Progress:** This project is still under active development and documentation. Some pinouts, wiring details, and firmware sections may still change or be incomplete.
+>
+> Suggestions, corrections, and improvements are always welcome! If you spot a mistake, have a better approach, or want to share your own findings with this wheel, feel free to open an **Issue** or submit a **Pull Request**.
+
 ## What You'll Need
 
 **Hardware**
