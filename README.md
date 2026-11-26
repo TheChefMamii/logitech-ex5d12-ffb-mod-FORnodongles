@@ -17,7 +17,7 @@ it into a USB-connected wheel with force feedback support.
 
 **Tools**
 - Screwdriver set (flathead)
-- 
+  
 ## Getting Started
 
 ## Step 1: Open the Wheel and Remove the Mainboard
